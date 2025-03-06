@@ -1,0 +1,13 @@
+Package: elden.ring.boss.clustering
+Title: Cluster Analysis for Elden Ring Bosses
+Type: Project
+Version: 2025.03.1
+Imports:
+    dbscan,
+    ggdendro,
+    ggplot2,
+    ggsci,
+    htmltools,
+    randomForest,
+    skimr,
+    stringr
