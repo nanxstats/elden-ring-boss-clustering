@@ -76,9 +76,13 @@ labels <- labels[sort(labels$x, decreasing = TRUE), ]
 labels$color <- pal_adaptive("observable", "observable10")(k)[labels$clust]
 
 html_list <- paste0(
-  "<ol>\n",
-  paste0("  <li><span style='color:", labels$color, "'>",
-    labels$label, "</span></li>\n",
+  "<ol>",
+  paste0(
+    "<li style='color:", labels$color, "'>",
+    "<span style='color:", labels$color, "'>",
+    labels$label,
+    "</span>",
+    "</li>",
     collapse = ""
   ),
   "</ol>"
