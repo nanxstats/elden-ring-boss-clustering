@@ -58,7 +58,7 @@ source("lib/ggsci-adaptive.R")
 k <- 85
 hcdata <- dendro_data_k(hc, k = k)
 
-pdf("dendro.pdf", height = 30, width = 20)
+pdf("dendrogram.pdf", height = 30, width = 20)
 plot_ggdendro(
   hcdata,
   direction = "lr",
