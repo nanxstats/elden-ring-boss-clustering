@@ -58,12 +58,16 @@ source("lib/ggsci-adaptive.R")
 k <- 85
 hcdata <- dendro_data_k(hc, k = k)
 
-pdf("dendrogram.pdf", height = 30, width = 20)
+pdf(
+  "dendrogram.pdf",
+  title = "Elden Ring boss clustering",
+  height = 10, width = 10
+)
 plot_ggdendro(
   hcdata,
   direction = "lr",
-  label.size = 2,
-  branch.size = 0.5,
+  label.size = 1,
+  branch.size = 0.3,
   expand.y = 0.2
 ) +
   scale_color_adaptive("observable", "observable10") +
