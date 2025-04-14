@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.3",
+    "Version": "4.5.0",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -1401,8 +1401,7 @@
       "NeedsCompilation": "yes",
       "Repository": "CRAN",
       "Author": "Leo Breiman [aut] (Fortran original), Adele Cutler [aut] (Fortran original), Andy Liaw [aut, cre] (R port), Matthew Wiener [aut] (R port)",
-      "Maintainer": "Andy Liaw <andy_liaw@merck.com>",
-      "Encoding": "UTF-8"
+      "Maintainer": "Andy Liaw <andy_liaw@merck.com>"
     },
     "renv": {
       "Package": "renv",
