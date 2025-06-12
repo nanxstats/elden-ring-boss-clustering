@@ -42,7 +42,10 @@ skimr::skim(df)
 
 # Fit model ----
 set.seed(42)
-fit <- randomForest::randomForest(x = df, ntree = 500)
+fit <- randomForest::randomForest(x = df, ntree = 50000)
+ragg::agg_png("variable-importance.png", width = 2560, height = 1920, res = 220, scaling = 1.2)
+varImpPlot(fit, main = "Variable importance")
+dev.off()
 p <- fit$proximity
 d <- as.dist(1 - p)
 
@@ -55,7 +58,7 @@ hc$labels <- boss_name
 source("lib/ggdendro-lite.R")
 source("lib/ggsci-adaptive.R")
 
-k <- 85
+k <- 60
 hcdata <- dendro_data_k(hc, k = k)
 
 pdf(
