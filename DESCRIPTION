@@ -8,6 +8,7 @@ Imports:
     ggplot2,
     ggsci,
     htmltools,
+    ragg,
     randomForest,
     skimr,
     stringr

@@ -4,6 +4,7 @@
 .Ruserdata
 
 *.pdf
+*.png
 
 .Rprofile
 /renv/

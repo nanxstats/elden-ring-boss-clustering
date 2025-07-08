@@ -44,7 +44,7 @@ skimr::skim(df)
 set.seed(42)
 fit <- randomForest::randomForest(x = df, ntree = 50000)
 ragg::agg_png("variable-importance.png", width = 2560, height = 1920, res = 220, scaling = 1.2)
-varImpPlot(fit, main = "Variable importance")
+randomForest::varImpPlot(fit, main = "Variable importance")
 dev.off()
 p <- fit$proximity
 d <- as.dist(1 - p)
